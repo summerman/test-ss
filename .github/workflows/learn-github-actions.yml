@@ -9,4 +9,4 @@ jobs:
   get-hostname:
     runs-on: self-hosted
     steps:
-      - run: hostname
+      - run: test_st2_workflow.sh
