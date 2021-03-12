@@ -1,5 +1,8 @@
 name: learn-github-actions
 on: 
+  push:
+    branch:
+      - master
   pull_request:
     types: [assigned, opened, synchronize, reopened]
 jobs:
