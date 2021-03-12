@@ -1,7 +1,12 @@
 name: learn-github-actions
-on: [push]
+on: 
+  push:
+    branch:
+      - master
+  pull_request:
+    types: [assigned, opened, synchronize, reopened]
 jobs:
-  check-bats-version:
+  get-hostname:
     runs-on: self-hosted
     steps:
-      - run: hostname
+      - run: test_st2_workflow.sh
